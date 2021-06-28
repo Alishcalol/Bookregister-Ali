@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/home">back to main</a></li>
+            <li class="nav-item"><a class="nav-link" href="/book/show-book">back to book list</a></li>
+          </ul>
+          <ul class="navbar-nav navbar-collapse justify-content-end">
+          </ul>
+        </nav>
+      <div style="height: 5px;"></div>
+    </div>
+    <form th:action="@{/book/save}" th:object="${theBook}" method="post">
+    <div class="container">
+        <div class="content">
+        
+          <input tupe="hidden" th:field="*{id}">
+        
+          <label> write book name</label><br>
+          <input tupe="text" th:field="*{name}" /><br><br>
+          
+          <label> write author</label><br>
+          <input tupe="text" th:field="*{author}" /><br><br>
+         
+          <label> write discription</label><br>
+          <input tupe="text" th:field="*{description}" /><br><br>
+          
+          <label> write page count</label><br>
+          <input tupe="text" th:field="*{description}" /><br><br>
+          
+          <label> write price</label><br>
+          <input tupe="number" th:field="*{price}" /><br><br>
+          
+          <input class="submit" type="submit" name="" value="Save">
+        </div>
+    </div>
+    </form>
+  </body>
+</html>

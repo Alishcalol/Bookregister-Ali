@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet" href="@{/css/style.css}">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/home">back to main</a></li>
+          <li class="nav-item"><a class="nav-link" href="/book/new-book">Add Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="/book/show-book">Book</a></li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+        </ul>
+      </nav>
+    <div style="height: 5px;"></div>
+  </div>
+<div class="container-fluid">
+<h1 class="welcome">Welcome to my library</h1>
+<div style="height: 5px;"></div>
+    </div>
+    <div class="containerP details">
+    <div class="row">
+      <div class="col-md-6 left-box">
+        <p>The author of this site is Alihusein, on this
+           site you can record books, I hope you enjoy my site,
+           thank you for your attention.</p>
+      </div>
+    </div>
+    </div>
+    <a class="btn btn-success sh" href="/book/show-book">Show the book</a>
+</body>
+</html>
